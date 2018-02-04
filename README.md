@@ -2,7 +2,7 @@
 nginx based docker image with pre-installed utilities with container hostname injected in the html.
 
 ### Demo
-<img src="https://raw.githubusercontent.com/salitrapraveen/whale/master/index.png" width="400">
+<img src="https://raw.githubusercontent.com/salitrapraveen/whale/master/docs/index.png" width="400">
 
 ### Pre-Installed Utilities
 1. nano
@@ -12,5 +12,5 @@ nginx based docker image with pre-installed utilities with container hostname in
 
 ### Docker Usage [https://hub.docker.com/r/salitrapraveen/whale/]
 `docker pull salitrapraveen/whale`  
-`docker run -d -p 3000:80 --name whale salitrapraveen/whale`
+`docker run -d -p 3000:80 -p 3443:443 --name whale salitrapraveen/whale`
 

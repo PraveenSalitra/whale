@@ -7,6 +7,6 @@ RUN apt-get update && apt-get install -y \
     nano
 RUN rm /etc/nginx/conf.d/default.conf
 COPY default.conf /etc/nginx/conf.d/default.conf
-COPY server.crt /etc/nginx/ssl/server.crt
-COPY server.private.key /etc/nginx/ssl/server.private.key
+COPY ssl/server.crt /etc/nginx/ssl/server.crt
+COPY ssl/server.private.key /etc/nginx/ssl/server.private.key
 COPY index.html /usr/share/nginx/html/index.html
